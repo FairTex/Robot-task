@@ -11,8 +11,8 @@ public class Program {
 		Robot robot = new Robot(new RobotConfig(robotRadius, maxAngularSpeed, maxLinearSpeed), robotPosition, robotDirection);
 		AI ai = new AI();
 		World world = new World(robot, ai, target);
-		double time = world.calculateTimeToTarget();
+		world.goToTarget();
 		
-		System.out.println(time);
+		System.out.println(world.time);
 	}
 }

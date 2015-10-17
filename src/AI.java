@@ -2,7 +2,7 @@
 public class AI {
 	final double epsilon = 0.001;
 	
-	public RobotCommand NextMove(Robot robot, double dt, World world) {
+	public RobotCommand nextMove(Robot robot, double dt, World world) {
 		double y = world.target.y - robot.position.y;
 		double x = world.target.x - robot.position.x;
 		double angle = Math.atan2(y, x); // ”гол между роботом и целью
